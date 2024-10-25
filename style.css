@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Lilita+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  line-height: 1.6;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 12.5%; /* Adjusted padding for better alignment */
+  background: rgb(39, 20, 39);
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center items vertically */
+  z-index: 100;
+}
+
+
+.logo-c {
+
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif; /* Choose a font */
+  font-weight: bold; /* Make it bold */
+  font-size: 16px; /* Adjust size as needed */
+  color: rgb(13, 3, 58);; /* Primary color */
+  filter: drop-shadow(0 0 5px white);
+}
+
+.c-letter {
+  font-size: 40px; /* Slightly larger */
+  color: rgb(21, 29, 75); /* Unique color for C */
+}
+
+.mart {
+  color: rgb(255, 255, 255);; /* Color for MART */
+  font-size: 20px; /* Slightly larger */
+  margin-left: 10px; /* Space between c and MART */
+}
+.navbar {
+  display: flex; /* Ensure navbar is displayed as a flex container */
+  align-items: center; /* Center navbar items vertically */
+}
+.navbar a {
+  position: relative;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: bold;
+  margin-right: 30px;
+  padding: 10px 0; /* Optional: Add some vertical padding for better alignment */
+}
+
+.navbar a::after {
+  content: rgb(13, 3, 58);
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  background: #e4e4e4;
+  border-radius: 5px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: .5s;
+}
+
+.navbar a:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: darkmagenta;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center; /* Vertically align the search bar and icons */
+  gap: 10px; /* Space between the search bar and icons */
+}
+
+
+
+/* Home Section Styles */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+  background: #f4f4f4;
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h3{
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.home-content h1
+{
+  font-size: 1.8em;
+  font-weight: 700;
+  line-height: 1;
+}
+.home-content h1:nth-of-type(2)
+{
+  margin-bottom:2rem;
+}
+
+.home-content p
+{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+span
+{
+  color:darkmagenta;
+
+}
+
+.home-img img {
+  max-width: 35vw;
+  border-radius: 50%;
+}
+
+.social-icons a
+{
+  display:inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  border: .2rem solid var(--main-color);
+  border-radius: 50%;
+  font-size: 2rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem, 0;
+
+
+}
+
+
+.social-icons a i 
+{
+  font-size: 22px;
+  color: purple;
+  margin-right: 5px;
+  transition: .5s ease;
+}
+
+.social-icons a:hover i {
+  transform: scale(1.2);
+  color: rgb(37, 24, 37);
+  box-shadow: 0 0 1rem rgb(34, 2, 44);
+}
+
+
+
+/* Skills Section */
+.skills-section {
+  padding: 4rem 1rem;
+  background: #fff;
+  text-align: center;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+/* Projects Section */
+.item-gallery {
+  padding: 4rem 1rem;
+  background: #f4f4f4;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Contact Section */
+.logreg-box {
+  padding: 4rem 1rem;
+  background: #fff;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-box input, .input-box textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  justify-content: center;
+  background-color: #007bff;         /* Button background color */
+  color: white;                       /* Button text color */
+  border: none;                       /* Remove border */
+  border-radius: 5px;                /* Rounded corners */
+  padding: 10px;                      /* Padding for buttons */
+  cursor: pointer;                    /* Change cursor on hover */
+  z-index: 10;                        /* Position above items */
+}
+
+.btn {
+  display: inline-block;
+  background: #7107a1;
+  color: rgb(255, 255, 255);
+  border: none;
+  letter-spacing: .1rem;
+  padding: 1rem 0.8rem;
+  font-weight:600 ;
+  border-radius: 4rem darkmagenta;
+  box-shadow: 0 0 1rem rgb(63, 45, 63);
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.btn:hover{
+  box-shadow: none;
+}
+
+.about
+{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: rgb(66, 34, 66);
+}
+
+.about-img img
+{
+  width: 35vw;
+}
+
+.heading
+{
+  text-align: center;
+  font-size: 3.0rem;
+
+}
+
+.about-content h2
+{
+  text-align: left;
+  line-height: 1.4;
+
+}
+
+.about-content h3
+{
+  font-size: 2.0rem;
+}
+.about-content p
+{
+  font-size: 1.2rem;
+  margin: 2rem 0 3rem;
+
+}
+/* Footer Styles */
+footer {
+  padding: 1rem;
+  background: #333;
+  color: white;
+  text-align: center;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .home-img img {
+    max-width: 100%;
+  }
+}
