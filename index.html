@@ -4,28 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem's Portfolio</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Custom Script -->
   <script src="script.js" defer></script>
 </head>
 <body>
+  <!-- Header -->
   <header class="header">
-    <div class="logo-c">
+    <div class="logo-container">
       <a href="index.html" class="logo">
         <span class="c-letter">B's</span>
         <span class="mart">Portfolio</span>
       </a>
     </div>
     <nav class="navbar">
-      <div class="dropdown">
-        <a href="#about">About Me</a>
-      </div>
-      <div class="dropdown">
-        <a href="#skills">Skills</a>
-      </div>
-      <div class="dropdown">
-        <a href="#projects">Projects</a>
-      </div>
+      <a href="#about">About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#contact" class="scroll-link">Contact</a>
     </nav>
   </header>
@@ -33,45 +35,42 @@
   <!-- Home Section -->
   <section id="home" class="home">
     <div class="home-content">
-      <h1>Hi,</h1>
-        <h3>It's Bem</h3>
-      <h1>A passionate <span>Front-end Developer.</span></h1>
-        <p>I specialize in creating user-friendly, visually appealing websites that deliver an exceptional user experience.</p>
+      <h1>Hi, I'm Bem</h1>
+      <h3>A passionate <span>Front-end Developer</span></h3>
+      <p>I specialize in creating user-friendly, visually appealing websites that deliver an exceptional user experience.</p>
       <a href="#projects">
         <button class="btn">View My Work</button>
-        <div class="social-icons">
-          <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-          <a href="https://github.com/Chebem" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-          <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
-          <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
-        </div>
       </a>
+      <div class="social-icons">
+        <a href="#" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://github.com/Chebem" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+        <a href="#" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+        <a href="#" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+      </div>
     </div>
     <div class="home-img">
-      <img src="profile2.PNG" alt="profile picture">
+      <img src="profile2.PNG" alt="Profile Picture">
     </div>
   </section>
 
-  <!---about conetnt-->
-
+  <!-- About Section -->
   <section class="about" id="about">
     <div class="about-img">
-      <img src="profilepic4.PNG" alt="">
+      <img src="profilepic4.PNG" alt="About Me">
     </div>
     <div class="about-content">
-      <h2 class="heading">🌐 About  <span> Me</span></h2>
-      <h3> Front End Developer</h3>
-      <p> Backend Enthusiast: Exploring databases and MySQL
-        Creatively building beautiful, functional websites that provide a great user experience. From responsive layouts to interactive features
-        <br>🌱 I’m learning more about React and Node.js
-        💬 Ask me about Frontend Development, MySQL, or Web Design</p>
-        <button class="btn"a href="#">Read More</a></button>
+      <h2 class="heading">🌐 About <span>Me</span></h2>
+      <h3>Front-End Developer</h3>
+      <p>
+        With a passion for backend technology as well, I love exploring databases, MySQL, and combining creative design with functionality. I strive to build dynamic, responsive, and visually appealing websites that deliver outstanding user experiences.
+        <br>🌱 Currently expanding my skills in React and Node.js.
+        <br>💬 Ask me about Frontend Development, MySQL, or Web Design.
+      </p>
+      <a href="#" class="btn read-more">Read More</a>
     </div>
-
   </section>
   
-
-  <!-- Skills Section with SVG icons -->
+  <!-- Skills Section -->
   <section id="skills" class="skills-section">
     <h2>Skills</h2>
     <div class="skills-grid">
@@ -84,7 +83,7 @@
         <h3>CSS3</h3>
       </div>
       <div class="skill">
-        <img src="" alt="JavaScript Icon">
+        <img src="js-logo.svg" alt="JavaScript Icon">
         <h3>JavaScript</h3>
       </div>
       <div class="skill">
@@ -95,27 +94,27 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="item-gallery">
+  <section id="projects" class="projects-section">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="project">
         <a href="https://chebem.github.io/Capstone_project">
           <img src="icons/project1.svg" alt="Project 1">
-          <h2>Project 1</h2>
+          <h3>Project 1</h3>
           <p>Responsive E-commerce Website</p>
         </a>
       </div>
       <div class="project">
         <a href="project2.html">
           <img src="icons/project2.svg" alt="Project 2">
-          <h2>Project 2</h2>
+          <h3>Project 2</h3>
           <p>Modern Web Application UI</p>
         </a>
       </div>
       <div class="project">
         <a href="project3.html">
           <img src="icons/project3.svg" alt="Project 3">
-          <h2>Project 3</h2>
+          <h3>Project 3</h3>
           <p>Portfolio Website</p>
         </a>
       </div>
@@ -123,34 +122,29 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="logreg-box">
-    <div class="form-box contact-form">
+  <section id="contact" class="contact-section">
+    <div class="form-container">
       <form action="#" method="post">
         <h2>Contact Me</h2>
         <div class="input-box">
           <span class="icon"><i class='bx bxs-user'></i></span>
-          <input type="text" required>
-          <label>Name</label>
+          <input type="text" placeholder="Your Name" required>
         </div>
-
         <div class="input-box">
           <span class="icon"><i class='bx bxs-envelope'></i></span>
-          <input type="email" required>
-          <label>Email</label>
+          <input type="email" placeholder="Your Email" required>
         </div>
-
         <div class="input-box">
-          <textarea required placeholder="Message"></textarea>
+          <textarea placeholder="Your Message" required></textarea>
         </div>
-
         <button type="submit" class="btn">Send Message</button>
       </form>
     </div>
   </section>
   
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Bem's Portfolio. All rights reserved.</p>
-   
   </footer>
 </body>
 </html>
