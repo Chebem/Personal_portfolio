@@ -4,162 +4,242 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bem's Portfolio</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Boxicons -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Custom Script -->
-    <script src="script.js" defer></script>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <script src="portfolio-script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
     <header class="header">
       <div class="logo-container">
         <a href="index.html" class="logo">
-          <span class="c-letter">B's</span>
-          <span class="mart">Portfolio</span>
+          <span class="c-letter">Bem</span>
+          <span class="mart">Codes</span>
         </a>
       </div>
       <nav class="navbar">
-        <a href="#about">About Me</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#contact" class="scroll-link">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <!-- Home Section -->
-    <section id="home" class="home">
+    <section class="home" id="home">
       <div class="home-content">
-        <h1>Hi, I'm Bem</h1>
-        <h3>A passionate <span>Front-end Developer</span></h3>
-        <p>
-          I specialize in creating user-friendly, visually appealing websites
-          that deliver an exceptional experience.
-        </p>
-        <a href="#projects">
-          <button class="btn">View My Work</button>
-        </a>
+        <h1>Hi There,</h1>
+        <h3>I'm a <span class="typing"></span></h3>
+        <p>I am into Front-end Development and enjoy bringing interfaces to life with delightful visuals and smooth interactivity.</p>
+        <a href="#about"><button class="btn">About Me</button></a>
         <div class="social-icons">
-          <a href="#" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/Chebem" aria-label="GitHub"
-            ><i class="bx bxl-github"></i
-          ></a>
-          <a href="#" aria-label="Twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" aria-label="Instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://github.com/Chebem"><i class='bx bxl-github'></i></a>
+          <a href="https://kr.linkedin.com/in/chebem-chukwuka-6a2a0313a"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://www.instagram.com/_vette_c/"><i class='bx bxl-instagram'></i></a>
+          <a href="https://m.applykorea.or.kr/news/view?cate=002&num=31695"><i class='bx bxl-blogger'></i></a>
+          <a href="https://bald-notify-26f.notion.site/RESUME-1320a30c6ac380fab519e476b405add5"><img src="icons/notion.svg" alt="Icon Description"></a> 
         </div>
       </div>
       <div class="home-img">
-        <img src="profile2.PNG" alt="Profile Picture" />
+        <img src="images/Profilepic2 .png" alt="Bem Profile" />
       </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
       <div class="about-img">
-        <img src="profilepic4.PNG" alt="About Me" />
+        <img src="images/Profilepic_main .png" alt="Bem About" />
       </div>
       <div class="about-content">
-        <h2 class="heading">
-          🌐 About <span>Me</span>
-        </h2>
+        <h2>About Me</h2>
         <h3>Front-End Developer</h3>
-        <p>
-          I combine creative design with functionality to build dynamic, responsive
-          websites. Passionate about backend technologies too, I enjoy exploring
-          databases and MySQL.
-          <br />🌱 Currently expanding my skills in React and Node.js.
-          <br />💬 Ask me about Frontend Development, MySQL, or Web Design.
-        </p>
-        <a href="#" class="btn read-more">Read More</a>
+        <p>I am a passionate web developer focused on creating interactive and responsive interfaces using HTML, CSS, and JavaScript. Currently expanding my stack with React and Node.js.</p>
+        <p><strong>Age:</strong> 25</p>
+        <p><strong>Phone:</strong> +82 10-7661-9955</p>
+        <p><strong>Email:</strong> chebemyvette18@gmail.com</p>
+        <p><strong>Location:</strong> Korea</p>
+        <a href="resume-en.pdf" class="btn" download>Download Resume (EN)</a>
+        <a href="Resume(KOR).V1.pdf" class="btn" download style="margin-left: 1rem;">이력서 다운로드 (KR)</a>
+        
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education-section" id="education">
+      <h2>Education</h2>
+      <div class="education-grid">
+        <div class="education-card">
+          <h3>Semyung University</h3>
+          <p><strong>Degree:</strong> BSc in Computer Science</p>
+          <p><strong>Year:</strong> 2021 – Present</p>
+          <p><strong>Status:</strong> In Progress</p>
+        </div>
+        <div class="education-card">
+          <h3>GKS Scholar Program</h3>
+          <p><strong>Host:</strong> South Korea (Global Korea Scholarship)</p>
+          <p><strong>Year:</strong> 2021 – Present</p>
+          <p><strong>Focus:</strong> Korean Language + STEM</p>
+        </div>
       </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <section class="skills-section" id="skills">
       <h2>Skills</h2>
       <div class="skills-grid">
-        <div class="skill">
-          <img src="html-5-logo.svg" alt="HTML5 Icon" />
-          <h3>HTML5</h3>
-        </div>
-        <div class="skill">
-          <img src="CSS-Logo.png" alt="CSS3 Icon" />
-          <h3>CSS3</h3>
-        </div>
-        <div class="skill">
-          <img src="js-logo.svg" alt="JavaScript Icon" />
-          <h3>JavaScript</h3>
-        </div>
-        <div class="skill">
-          <img src="responsive-design.png" alt="Responsive Design Icon" />
-          <h3>Responsive Design</h3>
-        </div>
+        <div class="skill"><img src="icons/html.png" alt="HTML5"><h3>HTML</h3></div>
+        <div class="skill"><img src="icons/css.png" alt="CSS3"><h3>CSS3</h3></div>
+        <div class="skill"><img src="icons/javascript.png" alt="JavaScript"><h3>JavaScript</h3></div>
+        <div class="skill"><img src="icons/library (1).png" alt="ResponsiveJS"><h3>ResponsiveJS</h3></div>
+        <div class="skill"><img src="icons/c-.png" alt="JavaScript"><h3>C++</h3></div>
+        <div class="skill"><img src="icons/java.png"><h3>Java<h3></div>
+        <div class="skill"><img src="icons/python.png" alt="HTML5"><h3>Python</h3></div>
+        <div class="skill"><img src="icons/sql.png" alt="HTML5"><h3>SQL</h3></div>
+        <div class="skill"><img src="icons/spring-boot-icon.svg" alt="HTML5"><h3>Spring boot</h3></div>
+        <div class="skill"><img src="icons/Firebase.svg" alt="HTML5"><h3>Firebase</h3></div>
+        <div class="skill"><img src="icons/android.png" alt="CSS3"><h3>Android</h3></div>
+        <div class="skill"><img src="icons/github.png" alt="HTML5"><h3>Github</h3></div>
+        <div class="skill"><img src="icons/word (1).png" alt="JavaScript"><h3> Word</h3></div>
+        <div class="skill"><img src="icons/powerpoint (1).png" alt="HTML5"><h3>PowerPoint</h3></div>
+        <div class="skill"><img src="icons/excel.png" alt="CSS3"><h3>Excel</h3></div>
+       
+
+        
       </div>
     </section>
 
+  
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project">
-          <a href="https://chebem.github.io/Capstone_project">
-            <img src="icons/project1.svg" alt="Project 1" />
-            <h3>Project 1</h3>
-            <p>Responsive E-commerce Website</p>
-          </a>
-        </div>
-        <div class="project">
-          <a href="project2.html">
-            <img src="icons/project2.svg" alt="Project 2" />
-            <h3>Project 2</h3>
-            <p>Modern Web Application UI</p>
-          </a>
-        </div>
-        <div class="project">
-          <a href="project3.html">
-            <img src="icons/project3.svg" alt="Project 3" />
-            <h3>Project 3</h3>
-            <p>Portfolio Website</p>
-          </a>
-        </div>
-      </div>
-    </section>
+<section class="projects-section" id="projects">
+  <h2>Projects Made</h2>
+  <div class="project-grid">
+    <div class="project" onclick="openModal('modal1')">
+      <img src="images/portfolio1.jpg" alt="Portfolio Website" />
+      <h3>Portfolio Website</h3>
+      <p>A responsive portfolio built with HTML, CSS and hosted on GitHub Pages.</p>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
-      <div class="form-container">
-        <form action="#" method="post">
-          <h2>Contact Me</h2>
-          <div class="input-box">
-            <span class="icon"><i class="bx bxs-user"></i></span>
-            <input type="text" placeholder="Your Name" required />
-          </div>
-          <div class="input-box">
-            <span class="icon"><i class="bx bxs-envelope"></i></span>
-            <input type="email" placeholder="Your Email" required />
-          </div>
-          <div class="input-box">
-            <textarea placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-    </section>
+    <div class="project" onclick="openModal('modal2')">
+      <img src="portfolio1.jpg" alt="Capstone App" />
+      <h3>Capstone Campus App</h3>
+      <p>A real-time navigation and campus guide app for students, built with Java and Firebase. Designed to help students explore and access key facilities at Semyung University.</p>
+    </div>
+
+    <div class="project" onclick="openModal('modal3')">
+      <img src="images/portfolio2.jpg" alt="E-commerce UI" />
+      <h3>E-commerce UI</h3>
+      <p>Modern shopping layout with product filters and grid sections.</p>
+    </div>
+
+    <div class="project" onclick="openModal('modal4')">
+      <img src="images/portfolio3.jpg" alt="Blog UI" />
+      <h3>Blog UI</h3>
+      <p>Blog-style interface layout with sidebar and comments.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Project Modals -->
+<div id="modal1" class="project-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal1')">&times;</span>
+    <h2>Portfolio Website</h2>
+    <img src="images/portfolio1.jpg" alt="Project Screenshot" />
+    <p>This portfolio website showcases my skills, projects, and resume. Built using HTML, CSS, and hosted on GitHub Pages.</p>
+    <p><strong>Stack:</strong> HTML, CSS</p>
+    <div class="project-links">
+      <a href="https://chebem.github.io/Capstone_project" class="btn">Live Demo</a>
+      <a href="https://github.com/yourusername/portfolio" class="btn">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal2" class="project-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal2')">&times;</span>
+    <h2>Capstone Campus App</h2>
+    <img src="portfolio1.jpg" alt="Project Screenshot" />
+    <p>A mobile-first navigation and campus guide app for students at Semyung University. Developed using Java (Android) and Firebase for real-time services and user auth.</p>
+    <p><strong>Stack:</strong> Java, Firebase, Android</p>
+    <div class="project-links">
+      <a href="https://chebem.github.io/Capstone_project" class="btn">Live Demo</a>
+      <a href="https://github.com/yourusername/campus-app" class="btn">GitHub</a>
+      <a href="https://youtu.be/your-demo-video" class="btn">Video</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal3" class="project-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal3')">&times;</span>
+    <h2>E-commerce UI</h2>
+    <img src="images/portfolio2.jpg" alt="Project Screenshot" />
+    <p>A clean and responsive e-commerce layout with grid-based product listings, filters, and shopping cart design.</p>
+    <p><strong>Stack:</strong> HTML, CSS, Flexbox</p>
+    <div class="project-links">
+      <a href="#" class="btn">Live Demo</a>
+      <a href="https://github.com/yourusername/ecommerce-ui" class="btn">GitHub</a>
+    </div>
+  </div>
+</div>
+
+<div id="modal4" class="project-modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('modal4')">&times;</span>
+    <h2>Blog UI</h2>
+    <img src="images/portfolio3.jpg" alt="Project Screenshot" />
+    <p>A blog-style layout that includes dark mode, sidebar navigation, and structured post cards. Designed with accessibility and readability in mind.</p>
+    <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
+    <div class="project-links">
+      <a href="#" class="btn">Live Demo</a>
+      <a href="https://github.com/yourusername/blog-ui" class="btn">GitHub</a>
+    </div>
+  </div>
+</div>
+
+
+   <!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="form-container">
+    <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
+  <input type="hidden" name="form-name" value="contact" />
+
+  <h2>Contact Me</h2>
+
+  <div class="input-box">
+    <span class="icon"><i class="bx bxs-user"></i></span>
+    <input type="text" name="name" placeholder="Your Name" required />
+  </div>
+
+  <div class="input-box">
+    <span class="icon"><i class="bx bxs-envelope"></i></span>
+    <input type="email" name="email" placeholder="Your Email" required />
+  </div>
+
+  <div class="input-box">
+    <textarea name="message" placeholder="Your Message" required></textarea>
+  </div>
+
+  <button type="submit" class="btn">Send Message</button>
+</form>
+  </div>
+</section>
+
+<div id="contactModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <h3>Thank you!</h3>
+    <p>Your message has been successfully sent. I'll get back to you soon.</p>
+  </div>
+</div>
+
+
 
     <!-- Footer -->
     <footer>
       <p>&copy; 2024 Bem's Portfolio. All rights reserved.</p>
     </footer>
+
   </body>
 </html>
