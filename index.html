@@ -17,6 +17,9 @@
           <span class="mart">Codes</span>
         </a>
       </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class='bx bx-menu'></i>
+      </div>
       <nav class="navbar">
         <a href="#about">About</a>
         <a href="#education">Education</a>
@@ -59,9 +62,10 @@
         <p><strong>Phone:</strong> +82 10-7661-9955</p>
         <p><strong>Email:</strong> chebemyvette18@gmail.com</p>
         <p><strong>Location:</strong> Korea</p>
-        <a href="resume-en.pdf" class="btn" download>Download Resume (EN)</a>
-        <a href="Resume(KOR).V1.pdf" class="btn" download style="margin-left: 1rem;">이력서 다운로드 (KR)</a>
-        
+        <div class="resume-buttons">
+          <a href="resume-en.pdf" class="btn" download>Download Resume (EN)</a>
+          <a href="Resume(KOR).V1.pdf" class="btn" download>이력서 다운로드 (KR)</a>
+        </div>
       </div>
     </section>
 
@@ -93,7 +97,7 @@
         <div class="skill"><img src="icons/javascript.png" alt="JavaScript"><h3>JavaScript</h3></div>
         <div class="skill"><img src="icons/library (1).png" alt="ResponsiveJS"><h3>ResponsiveJS</h3></div>
         <div class="skill"><img src="icons/c-.png" alt="JavaScript"><h3>C++</h3></div>
-        <div class="skill"><img src="icons/java.png"><h3>Java<h3></div>
+        <div class="skill"><img src="icons/java.png" alt="Java"><h3>Java<h3></div>
         <div class="skill"><img src="icons/python.png" alt="HTML5"><h3>Python</h3></div>
         <div class="skill"><img src="icons/sql.png" alt="HTML5"><h3>SQL</h3></div>
         <div class="skill"><img src="icons/spring-boot-icon.svg" alt="HTML5"><h3>Spring boot</h3></div>
@@ -117,24 +121,42 @@
     <div class="project" onclick="openModal('modal1')">
       <img src="images/portfolio1.jpg" alt="Portfolio Website" />
       <h3>Portfolio Website</h3>
-      <p>A responsive portfolio built with HTML, CSS and hosted on GitHub Pages.</p>
+      <p>A responsive portfolio built with HTML, CSS and hosted on GitHub Pages and Netlify.</p>
     </div>
 
     <div class="project" onclick="openModal('modal2')">
-      <img src="portfolio1.jpg" alt="Capstone App" />
-      <h3>Capstone Campus App</h3>
-      <p>A real-time navigation and campus guide app for students, built with Java and Firebase. Designed to help students explore and access key facilities at Semyung University.</p>
+      <img src="images/smu_logo.png" alt="Capstone App" />
+      <h3>Capstone Project : SMU Navigator  App</h3>
+      <p>A mobile-first navigation and campus guide app for students at Semyung University. Developed using Java (Android) and Firebase for real-time services and user auth.</p>
     </div>
 
     <div class="project" onclick="openModal('modal3')">
-      <img src="images/portfolio2.jpg" alt="E-commerce UI" />
-      <h3>E-commerce UI</h3>
+      <img src="images/TT_portfolio.jpeg" alt="E-commerce UI" />
+      <h3>Capstone Project: Price Comparison website</h3>
       <p>Modern shopping layout with product filters and grid sections.</p>
     </div>
 
     <div class="project" onclick="openModal('modal4')">
+      <img src="images/quizmeportfolio.jpeg" alt="Blog UI" />
+      <h3>QUIZ ME</h3>
+      <p>Blog-style interface layout with sidebar and comments.</p>
+    </div>
+
+    <div class="project" onclick="openModal('modal4')">
       <img src="images/portfolio3.jpg" alt="Blog UI" />
-      <h3>Blog UI</h3>
+      <h3>MPlayer : Android Music Player App</h3>
+      <p>Blog-style interface layout with sidebar and comments.</p>
+    </div>
+
+    <div class="project" onclick="openModal('modal4')">
+      <img src="images/dataPortfolio.jpeg" alt="Blog UI" />
+      <h3>Database / Data Analysis Projects</h3>
+      <p>Blog-style interface layout with sidebar and comments.</p>
+    </div>
+
+    <div class="project" onclick="openModal('modal4')">
+      <img src="images/portfolio3.jpg" alt="Blog UI" />
+      <h3>Other School works</h3>
       <p>Blog-style interface layout with sidebar and comments.</p>
     </div>
   </div>
@@ -145,9 +167,9 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal1')">&times;</span>
     <h2>Portfolio Website</h2>
-    <img src="images/portfolio1.jpg" alt="Project Screenshot" />
-    <p>This portfolio website showcases my skills, projects, and resume. Built using HTML, CSS, and hosted on GitHub Pages.</p>
-    <p><strong>Stack:</strong> HTML, CSS</p>
+    <img src="images/portfolioProject.jpg" alt="Project Screenshot" />
+    <p>This portfolio website showcases my skills, projects, and resume. Built using HTML, CSS, and hosted on GitHub Pages and Netlify.</p>
+    <p><strong>Stack:</strong> HTML, CSS, Javascript</p>
     <div class="project-links">
       <a href="https://chebem.github.io/Capstone_project" class="btn">Live Demo</a>
       <a href="https://github.com/yourusername/portfolio" class="btn">GitHub</a>
@@ -159,8 +181,8 @@
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal2')">&times;</span>
     <h2>Capstone Campus App</h2>
-    <img src="portfolio1.jpg" alt="Project Screenshot" />
-    <p>A mobile-first navigation and campus guide app for students at Semyung University. Developed using Java (Android) and Firebase for real-time services and user auth.</p>
+    <img src="images/portfolioNavigator.jpeg" alt="Project Screenshot" />
+    <p>A real-time navigation and campus guide app for students, built with Java and Firebase. Designed to help students explore and access key facilities at Semyung University.</p>
     <p><strong>Stack:</strong> Java, Firebase, Android</p>
     <div class="project-links">
       <a href="https://chebem.github.io/Capstone_project" class="btn">Live Demo</a>
@@ -173,12 +195,15 @@
 <div id="modal3" class="project-modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal3')">&times;</span>
-    <h2>E-commerce UI</h2>
+    <h2>Price Comparison Website(TT- The Time)</h2>
     <img src="images/portfolio2.jpg" alt="Project Screenshot" />
-    <p>A clean and responsive e-commerce layout with grid-based product listings, filters, and shopping cart design.</p>
-    <p><strong>Stack:</strong> HTML, CSS, Flexbox</p>
+    <p><strong>Project:</strong> Price Comparison Website (Capstone Project)</p>
+    <p>A full-stack web application helps users find the best deals on products across multiple online stores. It features real-time price comparison, smart deal recommendations, and an AI-powered chatbot assistant.
+    <p><strong>Features: </strong>Compare prices from multiple vendors in one place, Browse products by category with images and pricing</p>
+    <p><strong>Stack:</strong> HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, OpenAI API</p>
+    <p><strong>Tools:</strong> Replit (backend + frontend integration), GitHub, Netlify</p>
     <div class="project-links">
-      <a href="#" class="btn">Live Demo</a>
+      <a href="https://the-time-tt.web.app/" class="btn">Live Demo</a>
       <a href="https://github.com/yourusername/ecommerce-ui" class="btn">GitHub</a>
     </div>
   </div>
@@ -187,12 +212,12 @@
 <div id="modal4" class="project-modal">
   <div class="modal-content">
     <span class="close" onclick="closeModal('modal4')">&times;</span>
-    <h2>Blog UI</h2>
+    <h2>Quiz Me</h2>
     <img src="images/portfolio3.jpg" alt="Project Screenshot" />
     <p>A blog-style layout that includes dark mode, sidebar navigation, and structured post cards. Designed with accessibility and readability in mind.</p>
     <p><strong>Stack:</strong> HTML, CSS, JavaScript</p>
     <div class="project-links">
-      <a href="#" class="btn">Live Demo</a>
+      <a href="" class="btn">Live Demo</a>
       <a href="https://github.com/yourusername/blog-ui" class="btn">GitHub</a>
     </div>
   </div>
@@ -228,7 +253,7 @@
 
 <div id="contactModal" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal()">&times;</span>
+    <span class="close" onclick="closeModal('contactModal')">&times;</span>
     <h3 style="font-size: 1.8rem; color: #7107a1;">😊 Thank You!</h3>
     <p style="margin-top: 0.5rem; font-size: 1.1rem;">✅ Your message was sent successfully.</p>
     <p style="font-size: 1rem; color: #444;">📩 I'll get back to you shortly.</p>

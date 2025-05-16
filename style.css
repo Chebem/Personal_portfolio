@@ -88,6 +88,37 @@ body {
   color: darkmagenta;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 70px;
+    right: 10%;
+    background-color: rgba(39, 20, 39, 0.95);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+}
+
+
 /* Home Section */
 .home {
   display: flex;
@@ -252,6 +283,34 @@ body {
 
 .about-content .btn + .btn {
   margin-left: 1rem;
+}
+
+.resume-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  .resume-buttons {
+    flex-direction: column;
+  }
+
+  .resume-buttons .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+/* Stack resume buttons on small screens */
+@media (max-width: 600px) {
+  .about-content .btn + .btn {
+    display: block;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
 }
 
 /* Responsive Design */
@@ -620,3 +679,7 @@ body {
 }
 
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
