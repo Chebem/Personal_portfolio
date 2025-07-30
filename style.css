@@ -516,13 +516,18 @@ body {
   background: #fff;
   padding: 2rem;
   border-radius: 12px;
-  max-width: 600px;
-  width: 100%;
+
+  max-width: 800px;         /*wider horizontally */
+  width: 90%;
+  max-height: 90vh;         /* allow scrolling if content overflows */
+  overflow-y: auto;         /* enable vertical scroll */
+
   position: relative;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
   animation: fadeIn 0.4s ease-in-out;
 }
+
 
 .modal-content img {
   width: 100%;
@@ -560,6 +565,15 @@ body {
   color: #5b067d;
 }
 
+
+/*scrollbar styling for better appearance */
+.modal-content::-webkit-scrollbar {
+  width: 8px;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
 
 
 /* Contact Section */
