@@ -1,126 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
-    <title>Bem's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-    <script src="portfolio-script.js" defer></script>
-  </head>
-  <body>
-    <!-- Header -->
-    <header class="header">
-      <div class="logo-container">
-        <a href="index.html" class="logo">
-          <span class="c-letter">Bem</span>
-          <span class="mart">Codes</span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="icons/favicon.svg" />
+  <title>Chebem Yvette</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link  rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"/>
+  <!-- GSAP first -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="portfolio-script.js"></script>
+
+</head>
+
+<body>
+<!-- HERO FRAME (Konpo-style) -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+
+  <div class="counter">
+    <div class="counter-1 digit"></div>
+    <div class="counter-2 digit"></div>
+    <div class="counter-3 digit"></div>
+  </div>
+
+  <nav class="navbar">
+    <div class="logo-container">
+      <a href="#home" class="logo">
+        <span class="c-letter">Chebem Yvette</span>
+      </a>
+    </div>
+
+    <div class="menu-toggle" onclick ="toggleMenu()">
+      <i class="bx bx-menu"></i>
+    </div>
+
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home">
+    <div class="home-content">
+      <h1>Hi There,</h1>
+      <h2>I'm a <span class="typing"></span></h2>
+      <p>
+        I am into Front-end Development and enjoy bringing interfaces to life
+        with delightful visuals and smooth interactivity.
+      </p>
+
+      <a href="#about"><button class="btn">About Me</button></a>
+
+      <div class="social-icons">
+        <a href="https://github.com/Chebem"><i class="bx bxl-github"></i></a>
+        <a href="https://kr.linkedin.com/in/chebem-chukwuka-6a2a0313a"
+        ><i class="bx bxl-linkedin"></i
+        ></a>
+        <a href="https://www.instagram.com/_vette_c/"
+        ><i class="bx bxl-instagram"></i
+        ></a>
+        <a href="https://m.applykorea.or.kr/news/view?cate=002&num=31695"
+        ><i class="bx bxl-blogger"></i
+        ></a>
+        <a href="https://chebem.notion.site/RESUME-1320a30c6ac380fab519e476b405add5">
+          <img src="icons/notion.svg" alt="Notion" />
         </a>
       </div>
-      <div class="menu-toggle" onclick="toggleMenu()">
-        <i class='bx bx-menu'></i>
-      </div>
-      <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
+    </div>
 
-    <!-- Home Section -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h1>Hi There,</h1>
-        <h3>I'm a <span class="typing"></span></h3>
-        <p>I am into Front-end Development and enjoy bringing interfaces to life with delightful visuals and smooth interactivity.</p>
-        <a href="#about"><button class="btn">About Me</button></a>
-        <div class="social-icons">
-          <a href="https://github.com/Chebem"><i class='bx bxl-github'></i></a>
-          <a href="https://kr.linkedin.com/in/chebem-chukwuka-6a2a0313a"><i class='bx bxl-linkedin'></i></a>
-          <a href="https://www.instagram.com/_vette_c/"><i class='bx bxl-instagram'></i></a>
-          <a href="https://m.applykorea.or.kr/news/view?cate=002&num=31695"><i class='bx bxl-blogger'></i></a>
-          <a href="https://chebem.notion.site/RESUME-1320a30c6ac380fab519e476b405add5"><img src="icons/notion.svg" alt="Icon Description"></a> 
-        </div>
-      </div>
-      <div class="home-img">
-        <img src="images/Profilepic2 .png" alt="Bem Profile" />
-      </div>
-    </section>
+    <div class="home-img">
+      <img src="images/Profilepic2 .png" alt="Bem Profile" />
+    </div>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/Profilepic_main .png" alt="Bem About" />
-      </div>
-      <div class="about-content">
-        <h2>About Me</h2>
-        <h3>Front-End Developer</h3>
-        <p>I am a passionate web developer focused on creating interactive and responsive interfaces using HTML, CSS, and JavaScript. Currently expanding my stack with React and Node.js.</p>
-        <p><strong>Age:</strong> 25</p>
-        <p><strong>Phone:</strong> +82 10-7661-9955</p>
-        <p><strong>Email:</strong> chebemyvette18@gmail.com</p>
-        <p><strong>Location:</strong> Korea</p>
-        <div class="resume-buttons">
-          <a href="resume-en.pdf" class="btn" download>Download Resume (EN)</a>
-          <a href="Resume(KOR).V1.pdf" class="btn" download>이력서 다운로드 (KR)</a>
-        </div>
-      </div>
-    </section>
 
-    <!-- Education Section -->
-    <section class="education-section" id="education">
-      <h2>Education><i class="fi fi-sr-graduation-cap"></i></h2>
-      <div class="education-grid">
-        <div class="education-card">
-          <h3>Semyung University</h3>
-          <p><strong>Degree:</strong> BSc in Computer Science</p>
-          <p><strong>Year:</strong> 2022 – 2026</p>
-          <p><strong>Status:</strong> Expected to Graduate</p>
-        </div>
-        <div class="education-card">
-          <h3>GKS Scholar Program</h3>
-          <p><strong>Host:</strong> South Korea (Global Korea Scholarship)</p>
-          <p><strong>Year:</strong> 2021 – 2026</p>
-          <p><strong>Focus:</strong> Korean Language + STEM</p>
-        </div>
-      </div>
-    </section>
+  </section>
+</section>
 
-    <!-- Skills Section -->
-    <section class="skills-section" id="skills">
-      <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill"><img src="icons/html.png" alt="HTML5"><h3>HTML</h3></div>
-        <div class="skill"><img src="icons/css.png" alt="CSS3"><h3>CSS3</h3></div>
-        <div class="skill"><img src="icons/javascript.png" alt="JavaScript"><h3>JavaScript</h3></div>
-        <div class="skill"><img src="icons/library (1).png" alt="ResponsiveJS"><h3>ResponsiveJS</h3></div>
-        <div class="skill"><img src="icons/c-.png" alt="JavaScript"><h3>C++</h3></div>
-        <div class="skill"><img src="icons/java.png" alt="Java"><h3>Java<h3></div>
-        <div class="skill"><img src="icons/python.png" alt="HTML5"><h3>Python</h3></div>
-        <div class="skill"><img src="icons/sql.png" alt="HTML5"><h3>SQL</h3></div>
-        <div class="skill"><img src="icons/spring-boot-icon.svg" alt="HTML5"><h3>Spring boot</h3></div>
-        <div class="skill"><img src="icons/Firebase.svg" alt="HTML5"><h3>Firebase</h3></div>
-        <div class="skill"><img src="icons/android.png" alt="CSS3"><h3>Android</h3></div>
-        <div class="skill"><img src="icons/github.png" alt="HTML5"><h3>Github</h3></div>
-        <div class="skill"><img src="icons/word (1).png" alt="JavaScript"><h3> Word</h3></div>
-        <div class="skill"><img src="icons/powerpoint (1).png" alt="HTML5"><h3>PowerPoint</h3></div>
-        <div class="skill"><img src="icons/excel.png" alt="CSS3"><h3>Excel</h3></div>
-       
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="images/Profilepic_main .png" alt="Bem About" />
+  </div>
+  <div class="about-content">
+    <h2>About Me</h2>
+    <h3>Front-End Developer</h3>
+    <p>
+      I am a passionate web developer focused on creating interactive and
+      responsive interfaces using HTML, CSS, and JavaScript. Currently
+      expanding my stack with React and Node.js.
+    </p>
+    <p><strong>Age:</strong> 26</p>
+    <p><strong>Phone:</strong> +82 10-7661-9955</p>
+    <p><strong>Email:</strong> chebemyvette18@gmail.com</p>
+    <p><strong>Location:</strong> Korea</p>
+    <div class="resume-buttons">
+      <a href="resume-en.pdf" class="btn" download>Download Resume (EN)</a>
+      <a href="Resume(KOR).V1.pdf" class="btn" download>이력서 다운로드 (KR)</a>
+    </div>
+  </div>
+</section>
 
-        
-      </div>
-    </section>
+<!-- Education Section -->
+<section class="education-section" id="education">
+  <h2>Education <i class="fi fi-sr-graduation-cap"></i></h2>
+  <div class="education-grid">
+    <div class="education-card">
+      <h3>Semyung University</h3>
+      <p><strong>Degree:</strong> BSc in Computer Science</p>
+      <p><strong>Year:</strong> 2022 – 2026</p>
+      <p><strong>Status:</strong> Expected to Graduate</p>
+    </div>
+    <div class="education-card">
+      <h3>GKS Scholar Program</h3>
+      <p><strong>Host:</strong> South Korea (Global Korea Scholarship)</p>
+      <p><strong>Year:</strong> 2021 – 2026</p>
+      <p><strong>Focus:</strong> Korean Language + STEM</p>
+    </div>
+  </div>
+</section>
 
-  
-    <!-- Projects Section -->
+<!-- Skills Section -->
+<section class="skills-section" id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill"><img src="icons/html.png" alt="HTML5" /><h3>HTML</h3></div>
+    <div class="skill"><img src="icons/css.png" alt="CSS3" /><h3>CSS3</h3></div>
+    <div class="skill"><img src="icons/javascript.png" alt="JavaScript" /><h3>JavaScript</h3></div>
+    <div class="skill"><img src="icons/library (1).png" alt="ResponsiveJS" /><h3>ResponsiveJS</h3></div>
+    <div class="skill"><img src="icons/c-.png" alt="C++" /><h3>C++</h3></div>
+    <div class="skill"><img src="icons/java.png" alt="Java" /><h3>Java</h3></div>
+    <div class="skill"><img src="icons/python.png" alt="Python" /><h3>Python</h3></div>
+    <div class="skill"><img src="icons/sql.png" alt="SQL" /><h3>SQL</h3></div>
+    <div class="skill"><img src="icons/spring-boot-icon.svg" alt="Spring Boot" /><h3>Spring boot</h3></div>
+    <div class="skill"><img src="icons/Firebase.svg" alt="Firebase" /><h3>Firebase</h3></div>
+    <div class="skill"><img src="icons/android.png" alt="Android" /><h3>Android</h3></div>
+    <div class="skill"><img src="icons/github.png" alt="Github" /><h3>Github</h3></div>
+
+  </div>
+</section>
+
+<!-- Projects Section -->
 <section class="projects-section" id="projects">
-  <h2>Projects Made</h2>
+  <h2>Projects worked on</h2>
   <div class="project-grid">
     <div class="project" onclick="openModal('modal1')">
-      <img src="images/portfolio1.jpg" alt="Portfolio Website" />
+      <img src="images/portfolioProject.jpg" alt="Portfolio Website" />
       <h3>Portfolio Website</h3>
       <p>A responsive portfolio built with HTML, CSS and hosted on GitHub Pages and Netlify.</p>
     </div>
@@ -139,25 +168,7 @@
 
     <div class="project" onclick="openModal('modal4')">
       <img src="images/quizmeportfolio.jpeg" alt="Blog UI" />
-      <h3>QUIZ ME</h3>
-      <p>Blog-style interface layout with sidebar and comments.</p>
-    </div>
-
-    <div class="project" onclick="openModal('modal4')">
-      <img src="images/portfolio3.jpg" alt="Blog UI" />
-      <h3>MPlayer : Android Music Player App</h3>
-      <p>Blog-style interface layout with sidebar and comments.</p>
-    </div>
-
-    <div class="project" onclick="openModal('modal4')">
-      <img src="images/dataPortfolio.jpeg" alt="Blog UI" />
-      <h3>Database / Data Analysis Projects</h3>
-      <p>Blog-style interface layout with sidebar and comments.</p>
-    </div>
-
-    <div class="project" onclick="openModal('modal4')">
-      <img src="images/portfolio3.jpg" alt="Blog UI" />
-      <h3>Other School works</h3>
+      <h3>Quiz Me</h3>
       <p>Blog-style interface layout with sidebar and comments.</p>
     </div>
   </div>
@@ -225,30 +236,30 @@
 </div>
 
 
-   <!-- Contact Section -->
+<!-- Contact Section -->
 <section id="contact" class="contact-section">
   <div class="form-container">
     <form name="contact" method="POST" data-netlify="true" onsubmit="handleSubmit(event)">
-  <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="form-name" value="contact" />
 
-  <h2>Contact Me</h2>
+      <h2>Contact Me</h2>
 
-  <div class="input-box">
-    <span class="icon"><i class="bx bxs-user"></i></span>
-    <input type="text" name="name" placeholder="Your Name" required />
-  </div>
+      <div class="input-box">
+        <span class="icon"><i class="bx bxs-user"></i></span>
+        <input type="text" name="name" placeholder="Your Name" required />
+      </div>
 
-  <div class="input-box">
-    <span class="icon"><i class="bx bxs-envelope"></i></span>
-    <input type="email" name="email" placeholder="Your Email" required />
-  </div>
+      <div class="input-box">
+        <span class="icon"><i class="bx bxs-envelope"></i></span>
+        <input type="email" name="email" placeholder="Your Email" required />
+      </div>
 
-  <div class="input-box">
-    <textarea name="message" placeholder="Your Message" required></textarea>
-  </div>
+      <div class="input-box">
+        <textarea name="message" placeholder="Your Message" required></textarea>
+      </div>
 
-  <button type="submit" class="btn">Send Message</button>
-</form>
+      <button type="submit" class="btn">Let's Talk</button>
+    </form>
   </div>
 </section>
 
@@ -263,14 +274,12 @@
 
 
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Bem's Portfolio. All rights reserved.</p>
-    </footer>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2024 Bem's Portfolio. All rights reserved.</p>
+</footer>
 
-  </body>
+<!-- Projects + Contact + Footer -->
+<!-- (keep the rest of your code exactly the same from here down) -->
+</body>
 </html>
-
-
-
-

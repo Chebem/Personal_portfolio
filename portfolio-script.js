@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", () => {
     // Typing Effect
     const typingElement = document.querySelector('.typing');
@@ -60,7 +61,7 @@ window.handleSubmit = function(e) {
     }
   };
   
-  // ⛔ Close modal if user clicks outside the content area
+  //  Close modal if user clicks outside the content area
   document.querySelectorAll('.project-modal, #contactModal').forEach(modal => {
     modal.addEventListener('click', function(e) {
       if (e.target === modal) closeModal(modal.id);
@@ -96,10 +97,33 @@ window.handleSubmit = function(e) {
       });
     });
   });
-  
 
-  function toggleMenu() {
-    const navbar = document.querySelector('.navbar');
-    navbar.classList.toggle('active');
-  }
+window.toggleMenu = function () {
+  const links = document.querySelector('.links');
+  links.classList.toggle('active');
+}
+
+  document.querySelectorAll('.links a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.querySelector('.links').classList.remove('active');
+    });
+
+  //GSAP Animation
+  link.addEventListener('mouseenter', () => {
+    gsap.to(link, {
+      scale: 1.1,
+      duration: 0.3,
+      ease: 'power2.inOut'
+    });
+  });
+
+  link.addEventListener('mouseleave', () => {
+    gsap.to(link, {
+      scale: 1,
+      duration: 0.3,
+      ease: 'power2.inOut'
+    });
+  });
+});
+
   
