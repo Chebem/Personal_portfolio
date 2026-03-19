@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     // Typing Effect
     const typingElement = document.querySelector('.typing');
-    const texts = ["Front-end Developer", "UI/UX Enthusiast", "Creative Coder"];
+    const texts = ["Ehihie Oma!", "안녕하세요!", "Bonne Journée!"];
     let index = 0, charIndex = 0;
   
     function type() {
@@ -110,6 +110,7 @@ window.toggleMenu = function () {
 
   //GSAP Animation
   link.addEventListener('mouseenter', () => {
+    // eslint-disable-next-line no-undef
     gsap.to(link, {
       scale: 1.1,
       duration: 0.3,
@@ -118,6 +119,7 @@ window.toggleMenu = function () {
   });
 
   link.addEventListener('mouseleave', () => {
+    // eslint-disable-next-line no-undef
     gsap.to(link, {
       scale: 1,
       duration: 0.3,

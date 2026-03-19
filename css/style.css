@@ -1,6 +1,4 @@
 /* Importing fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;500;600&display=swap");
-
 /* Global Reset */
 * {
   margin: 0;
@@ -8,6 +6,8 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+
+
 
 :root {
   --bg: #F3F2FA;
@@ -20,9 +20,31 @@
   --accent-dark: #6D28D9;
 
   --line: #E1E2EA;
+
+  --font-body: 'Poppins-Variable', sans-serif;
+  --font-heading: 'ClashGrotesk-Variable', sans-serif;
 }
 
-  body {
+body, p, li, span, input, textarea
+{
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4,
+.navbar a,
+.btn
+{
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+
+
+body {
   line-height: 1.6;
   background: var(--bg);
   color: var(--text-main);
@@ -44,7 +66,14 @@
   z-index: 0;
 }
 
+.hero-title{
+  font-weight: 700
+}
 
+.section-title
+{
+  font-weight: 600;
+}
 
 /* Header */
 .header {
@@ -81,6 +110,17 @@
   border-bottom: 1px solid var(--text-main);
 }
 
+.navbar a
+{
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.small-text
+{
+  font-weight: 300;
+}
 .logo-container {
   display: flex;
   align-items: center;
@@ -217,12 +257,12 @@
 }
 
 .home-img img {
-  width: 100%;
+  width: 150%;
   max-width: 280px;
   height: auto;
   border-radius: 15px;
   object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px var(--text-main);
 }
 
 .home-content {
@@ -292,7 +332,7 @@
 
 /* Switch to white version on hover */
 .notion-icon:hover img {
-  content: url("../icons/notion_white.svg");
+  content: url("../public/icons/notion_white.svg");
   transform: scale(1.1);
 }
 
