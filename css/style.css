@@ -332,7 +332,7 @@ body {
 
 /* Switch to white version on hover */
 .notion-icon:hover img {
-  content: url("../icons/notion_white.svg");
+  content: url("../public/icons/notion_white.svg");
   transform: scale(1.1);
 }
 
