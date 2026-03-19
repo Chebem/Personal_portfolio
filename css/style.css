@@ -257,12 +257,12 @@ body {
 }
 
 .home-img img {
-  width: 100%;
+  width: 150%;
   max-width: 280px;
   height: auto;
   border-radius: 15px;
   object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 20px var(--text-main);
 }
 
 .home-content {
